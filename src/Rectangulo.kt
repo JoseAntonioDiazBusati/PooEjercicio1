@@ -15,4 +15,7 @@ class Rectangulo (val base: Double, val altura: Double) {
         return area
     }
 
+    override fun toString(): String {
+        return "Rectángulo (base = $base, altura = $altura)"
+    }
 }
