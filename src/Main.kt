@@ -1,14 +1,15 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-fun main() {
-    val name = "Kotlin"
-    //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-    // to see how IntelliJ IDEA suggests fixing it.
-    println("Hello, " + name + "!")
 
-    for (i in 1..5) {
-        //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-        // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-        println("i = $i")
-    }
+// Crear una clase Rectángulo, con atributos base y altura. La clase debe disponer del constructor y
+// los métodos para calcular el area y el perimetro. Los atributos no se podrán modificar,
+// aunque si consultar. Por último, tendrán que ser mayor que 0.
+// Opcionalmente se puede crear el método toString() para mostrar información sobre el rectángulo:
+// override fun toString() = "". (Pulsa Ctrl+o)
+// En el programa principal, crear varios rectángulos. Mostarlos y mostrar por pantalla sus áreas y perímetros.
+
+fun main (args: Array<String>) {
+
+    val rectangulo = Rectangulo(7.0,15.6)
+
+    println("El area del rectangulo es: ${rectangulo.area()}")
+    println("El perimetro del rectangulo es: ${rectangulo.perimetro()}")
 }
