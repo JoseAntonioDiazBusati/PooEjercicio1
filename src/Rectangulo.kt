@@ -6,7 +6,7 @@ class Rectangulo (val base: Double, val altura: Double) {
     }
 
     fun perimetro(): Double {
-        val perimetro = (2 * base) + (2 * altura)
+        val perimetro = 2 * (base + altura)
         return perimetro
     }
 
